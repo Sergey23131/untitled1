@@ -1,0 +1,95 @@
+@media screen and (max-width: 480px){
+.header_link{
+  display: none;
+}
+  .f_right img{
+    display: none;
+  }
+.f_button{
+  position: initial;
+  margin: 25px ;
+}
+.s_left{
+  display: none;
+}
+.t_wrap {
+  margin: 0px;
+}
+.text_th h2{
+  font-size: 50px;
+  line-height: 30px;
+}
+.t_box{
+  display: block;
+}
+.t_box img{
+  display: none;
+}
+  .fourth{
+    width: 485px;
+  }
+.fo_wrap {
+  padding: 20px;
+  margin: 20px;
+}
+.fo_text h2{
+  font-size: 40px;
+  line-height: 30px;
+}
+.fo_box img{
+  display: none;
+}
+  .fo_box{
+    display: block;
+  }
+  .fi_wrapper{
+    display: none;
+  }
+.sixth{
+  margin: 20px;
+  height: 400px;
+}
+.si_left h2{
+  margin: 0;
+}
+  .si_left p{
+    max-width: 300px;
+  }
+.si_right{
+  display: none;
+}
+.seven_wrapper{
+  display:block ;
+  margin: 0;
+  height: 350px;
+  width: 350px;
+}
+
+.se_left {
+  margin: 30px;
+  padding: 0;
+}
+.get{
+  margin: 20px;
+}
+
+  .eight{
+    margin: 0;
+    padding: 20px;
+    width: 485px;
+
+  }
+  .ei_links{
+    display: none;
+  }
+
+  .ei_second{
+    margin-top: 20px;
+  }
+  .ei_down a{
+    display: none;
+  }
+  .ei_down img{
+    margin: 0;
+  }
+}
