@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let word_1, word_2, word_3, word_4, number_1, number_2, number_3, number_4, number_5, number_6, number_7, bull_1,
+        bull_2;
+    word_1 = 'hello';
+    word_2 = 'owu';
+    word_3 = 'com';
+    word_4 = 'ua';
+    number_1 = 1;
+    number_2 = 10;
+    number_3 = -999;
+    number_4 = 123;
+    number_5 = 3.14;
+    number_6 = 2.7;
+    number_7 = 16;
+    bull_1 = true;
+    bull_2 = false;
+
+    console.log(word_1);
+    console.log(word_2);
+    console.log(word_3);
+    console.log(word_4);
+    console.log(number_1);
+    console.log(number_2);
+    console.log(number_3);
+    console.log(number_4);
+    console.log(number_5);
+    console.log(number_6);
+    console.log(number_7);
+    console.log(bull_1);
+    console.log(bull_2);
+
+    document.write('<h1>' + word_1 + '</h1>');
+    document.write(`<h1>${word_1}</h1>`);
+    document.write(`<h1>${word_2}</h1>`);
+    document.write(`<h1>${word_3}</h1>`);
+    document.write(`<h1>${word_4}</h1>`);
+    document.write(`<h1>${number_1}</h1>`);
+    document.write(`<h1>${number_2}</h1>`);
+    document.write(`<h1>${number_3}</h1>`);
+    document.write(`<h1>${number_4}</h1>`);
+    document.write(`<h1>${number_5}</h1>`);
+    document.write(`<h1>${number_6}</h1>`);
+    document.write(`<h1>${number_7}</h1>`);
+    document.write(`<h1>${bull_1}</h1>`);
+    document.write(`<h1>${bull_2}</h1>`);
+
+    let firstName = "Serhii ";
+    let midleName = "Stetsenko ";
+    let lastName = 'Serhiyovich';
+
+    let person = firstName+midleName+lastName;
+
+    let name_p= prompt('Введите своё имя');
+    let surname= prompt('Введите свою фамилию');
+    let age =  prompt('Введите ваш возраст');
+
+    document.write(`<h1> Привет ${name_p} ${surname}. Тебе ${age} лет</h1>`);
+
+    let a = 100; let b = '100'; let c = true;
+    console.log(typeof a);
+    console.log(typeof b);
+    console.log(typeof c);
+
+    /*5 < 6 -> true
+    5 > 6 -> false
+    5 >= 6 -> false
+    5 == 6 -> false
+    10 == 10 -> true
+    10 >= 10 -> true
+    10 != 10 -> false
+    10 < 10 -> false
+    10 > 10 -> false
+    123 > '123' -> false
+    123 == '123' -> true*/
+
+   /* console.log(132 > 100 && 45 < 12 ); false
+    console.log(34 > 33 && 23 < 90 ); true
+    console.log(99 > 100 && 45 > 12 ); fasle
+    console.log(132 > 100 || 45 < 12 ); true
+    console.log(111 > 11 || 45 < 111 );true
+    console.log((111 > 11 || 45 < 111) && (132 > 100 || 45 < 12) );true
+    console.log((111 > 11 || 45 < 56) || (132 > 100 || 45 < 12) );true
+    console.log((132 > 100 && 45 < 12 ) && (132 > 100 || 45 < 12 ) );fasle
+    console.log((111 > 11 || 45 < 111) || (99 > 100 && 45 > 12 ));true
+    console.log(!!'-1');true
+    console.log(!!-1);true
+    console.log(!!'0');true
+    console.log(!!'null');fasle
+    console.log(!!'undefined');fasle
+    console.log(!!(3/'owu'));false
+    console.log((111 > 11 || 45 < 111) ||  !!'0');true
+    console.log((!!111 == !!11 || 45 < 111) && (99 > 100 && 45 > 12 )); fasle*/
+</script>
+</body>
+</html>

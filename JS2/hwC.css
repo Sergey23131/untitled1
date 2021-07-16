@@ -1,0 +1,14 @@
+.product_card img{
+    height: 500px;
+    width: 500px;
+}
+
+.product_box{
+    display: inline-block;
+    float: left;
+    margin: 30px;
+}
+
+.text{
+    font-size: 30px;
+}
