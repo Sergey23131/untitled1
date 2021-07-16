@@ -79,40 +79,18 @@ let age_1 = prompt('Your ages?');
 
 alert("Dear "+name_1+surname+", take my congratulations, you are "+age_1);*/
 ////////////////////////////////////////////////////////
-/*et first= prompt('put first number');
-let second= prompt('put second number');
-let thirdth= prompt('put thirdth number');
+let a = +prompt('put first number');
+let b = +prompt('put second number');
+let c = +prompt('put thirdth number');
 
-let arr = [];
+if (a >= b && a >= c && b >= c) document.write(`${c} ${b} ${a}`);
+if (a >= b && a >= c && c >= b) document.write(`${b} ${c} ${a}`);
+if (b >= b && b >= c && a >= c) document.write(`${c} ${a} ${b}`);
+if (b >= b && b >= c && c >= a) document.write(`${a} ${c} ${b}`);
+if (c >= b && c >= b && b >= a) document.write(`${a} ${b} ${c}`);
+if (c >= b && c >= b && a >= b) document.write(`${b} ${a} ${c}`);
 
-if (first>second&&first>thirdth){
-arr[0]=first;
-}else if(second>first&&second>thirdth){
-  arr[0]=second;
-}
-else if(thirdth>first&&thirdth>second){
-  arr[0]=thirdth;
-}
-
-if (first>second&&first>thirdth){
-  arr[1]=first;
-}else if(second>first&&second>thirdth){
-  arr[1]=second;
-}
-else if(thirdth>first&&thirdth>second){
-  arr[1]=thirdth;
-}
-
-if (first>second&&first>thirdth){
-  arr[2]=first;
-}else if(second>first&&second>thirdth){
-  arr[2]=second;
-}
-else if(thirdth>first&&thirdth>second){
-  arr[2]=thirdth;
-}
-
-alert(arr);*/
+    alert(arr);
 ////////////////////////////////////////////////////////
 /*
 let color = prompt('Введите цвет светофора');
