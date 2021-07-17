@@ -1,0 +1,11 @@
+
+
+.user_box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user_block{
+width: 49%;
+    margin: 5px;
+}

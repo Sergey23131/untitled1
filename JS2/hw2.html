@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+<link rel="stylesheet" href="hw2_C.css">
 <body>
 <script>
   /*За допомогою циклу вивести всю інформацію про пости використовуючи шаблон Template 1.1.
@@ -614,15 +615,16 @@
       body: 'cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut'
     }
   ];
+document.write(`<div class="user_box">`);
+for (const arr_q of arr){
+    document.write(`<div class="post-card">
+             <h3>ID - ${arr_q.id} TITLE - ${arr_q.title}</h3>
+                <p>${arr_q.body}</p>
 
- document.write('<div class="wrap">');
-for (const user of arr){
-  document.write(`<div class="post">
-    <h3>ID-${arr.id}  TITLE - ${arr.title}</h3>
-    <p>${arr.body}</p>
-  </div>`);
+</div>`);
 }
- document.write('</div>');
+document.write(`</div>`);
+
 
 </script>
 </body>
