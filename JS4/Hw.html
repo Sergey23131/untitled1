@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+   /*/!*  - створити функцію, яка генерує масив рандомних числових цілих значень в діапазоні від 0 до 100.
+      - Змінти попередню функцію, щоб діапазон можна було визначити через аргументи.*!/*/
+    let arr = [];
+    function random(a,b) {
+        let l;
+        for (let i = 0; i < a; i++) {
+            l = Math.round(Math.random() * b);
+            arr[i] = l;
+        }
+    }
+    random(5,50);
+    console.log(arr);
+
+/*- створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень.
+Відсортувати його за допомоги sort*/
+    let sort= arr.sort((a,b)=>a-b);
+   console.log(arr);
+
+/*   - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень.
+       відфільтрувати  його за допомоги filter, за лишивши тільки парні числа*/
+
+   let filt = arr.filter(arr=>!(arr%2));
+   console.log(filt);
+
+  /* створити масив рандомних цілих числових значень (або згенерувати, за допомоги попередньої функції) .
+   за допомоги map та колбеку перетворити всі об'єкти в масиві на срінгові.*/
+
+   let map = arr.map(function (value){
+       return{
+           number: String(value)
+       }
+   }
+   )
+   console.log(map);
+
+ /*  Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
+   створити пустий масив, наповнити його 10 об'єктами new User(....)
+   Взяти масив цей  User[] та: Відфільтрувати , залишивши тільки об'єкти з парними id (filter) та Відсортувати його по id. по зростанню (sort)*/
+   class User{
+       constructor(id, name, surname , email, phone) {
+           this.id=id;
+           this.surname=surname;
+           this.email=email;
+           this.phone=phone;
+       }
+   }
+
+
+   const anna=new User(0,'anna','boat','gasdas@gmail',380123124122);
+   const victor=new User(1,'victor','bfgf','gasdas@gmail',380112312232);
+   const lisa=new User(2,'lisa','boasdasdt','gasdas@gmail',380126445512);
+   const victoria=new User(3,'victoria','bofsfs','gasdas@gmail',380125454412);
+   const john=new User(4,'john','bodsd','gasdas@gmail',380123145342);
+   const fred=new User(5,'fred','bcvhft','gasdas@gmail',380123176672);
+   const nastia=new User(6,'nastia','dfdft','gasdas@gmail',380123125332);
+   const olya=new User(7,'olya','bqwet','gasdas@gmail',380123134334);
+   const serhii=new User(8,'serhii','bcvc','gasdas@gmail',380123644453);
+   const olus=new User(9,'olus','asdsd','gasdas@gmail',380123129889);
+
+   let users=[anna,victor,lisa,victoria,john,fred,nastia,olya,serhii,olus];
+
+   let users_filter = users.filter(users=>!(users.id%2));
+   console.log(users_filter);
+</script>
+</body>
+</html>
