@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    /* /!*- створити функцію яка обчислює та повертає площу прямокутника*!/
+     function s_first(a,b){
+     return a*b
+     }
+
+     let a= +prompt('first number');
+     let b= +prompt('second number');
+     let s_f = s_first(a,b);
+     alert (s_f);*/
+
+    /*
+    /!* - створити функцію яка обчислює та повертає площу кола*!/
+
+     function s_first(a){
+       return a*a*3.14;
+     }
+
+     let a= +prompt('radius of circle');
+     let s_f = s_first(a);
+     alert (s_f);
+    */
+
+
+    /* - створити функцію яка обчислює та повертає площу циліндру
+
+     function s_first(a,b){
+       return 2*3.14*a*(b+a);
+     }
+
+     let a= +prompt('height of celinder');
+     let b= +prompt('radius of celinder ');
+     let s_f = s_first(a,b);
+     alert (s_f);*/
+   /* !* - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);*!/*/
+
+
+    function cua(){
+      let arr=arguments;
+      for(let i=0;i<arr.length;i++){
+        for (let j=0;arr[i]>arr[j];j++){
+          let b = arr[i];
+          arr[i] = arr[j];
+          arr[j] = b;
+        }
+          console.log(arr);
+      }
+
+    }
+     cua(5,2,4,1,23,51,230203,235);
+
+
+    /*створити функцію яка  створює блок з текстом. Текст задати через аргумент
+    function text(a) {
+      document.write(`<div>${a}</div>`);
+    }
+
+    text('Solid stone');*/
+
+    /*- створити функцію яка  створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий*/
+    /*function text(a) {
+      document.write(`<ul>
+   <li>${a}</li>
+   <li>${a}</li>
+   <li>${a}</li>
+   </ul>`);
+    }
+
+    text('Solid stone');
+   */
+
+    /* створити функцію яка  створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий.
+             Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
+     - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список*/
+
+    /*function text(a, b) {
+        document.write(`<ul>`);
+        for (let i=0; i <= b; i++) {
+            document.write(`<li>${a}</li>`);
+        }
+        document.write(`</ul>`);
+    }
+    text('sdas', 3);
+*/
+
+   /* function pull() {
+
+        document.write(`<ul>`);
+        for (let i = 0; i < arguments.length; i++) {
+            document.write(`<li>${arguments[i]}</li>`);
+        }
+        document.write(`</ul>`);
+    }
+
+    pull(23,123,'sdals');*/
+</script>
+</body>
+</html>
