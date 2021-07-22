@@ -49,7 +49,7 @@
     -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
     -- changeYear (newValue) - змінює рік випуску на значення newValue
     -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і доавляет його в поточний об'єкт car*/
-
+/*
     function cars(model,mad,year,speed,volume){
        this.f_model=model;
         this.f_madder=mad;
@@ -80,7 +80,7 @@
     }
 
     let skora = cars('Skoda','Russia',2000,200,5);
-    console.log(skora);
+    console.log(skora);*/
     /*- (Те саме, тільки через клас)
     Створити клас який дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску,
     максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
@@ -125,6 +125,40 @@
     const gas = new Cars('Soda', 'Russia', 2000, 200, 5);
 
 console.log(gas);*/
+
+  /*  -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити 10 попелюшок ,
+   покласти їх в масив.
+    Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
+        За допомоги циклу знайти яка попелюшка повинна бути з принцом.
+        Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку*/
+
+    class Girls {
+        constructor(name, age, feet) {
+            this.name = name;
+            this.age = age;
+            this.feet = feet;
+        }
+    }
+
+    const olya = new Girls('Olya',18,34);
+    const nastya = new Girls('Nastya',19,35);
+    const maria = new Girls('Maria',18,36);
+    const jenya = new Girls('Jenya',20,34);
+    const monica = new Girls('Monica',17,33);
+    const luisa = new Girls('Luisa',19,35);
+    const sara = new Girls('Sara',21,36);
+    const kris = new Girls('Kris',19,35);
+    const nadia = new Girls('Nadia',18,35);
+    const moja = new Girls('Moja',22,34);
+
+
+    let princess= [olya,nastya,maria,jenya,monica,luisa,sara,kris,nadia,moja];
+
+    let prince= {
+        name:John,
+        age:23,
+        feet:34
+    }
 
 
 </script>
