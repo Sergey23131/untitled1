@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<p id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cupiditate deleniti
+    molestias mollitia pariatur porro saepe! Dolorem eaque earum eligendi, iste maxime molestias quam vitae.
+    Dolore hic in quae sed.
+</p>
+
+<div id="rules" class="fc bp">
+    Первое правило Бойцовского клуба: никому не рассказывать о Бойцовском клубе. Второе правило Бойцовского
+    клуба: никогда никому не рассказывать о Бойцовском клубе. Третье правило Бойцовского клуба: в схватке
+    участвуют только двое. Четвертое правило Бойцовского клуба: не более одного поединка за один раз
+</div>
+
+<ul>
+    <li class="fc_rules rule1">Первое правило Бойцовского клуба: никому не рассказывать о Бойцовском клубе.</li>
+    <li class="fc_rules rule2">Второе правило Бойцовского
+        клуба: никогда никому не рассказывать о Бойцовском клубе
+    </li>
+    <li class="fc_rules rule3">Третье правило Бойцовского клуба: в схватке
+        участвуют только двое.
+    </li>
+    <li class="fc_rules rule4">Четвертое правило Бойцовского клуба: не более одного поединка за один раз</li>
+</ul>
+<!-- - Напишіть код,  який за допомоги document.getElementById або document.getElementsByClassName або document.getElementsByTagName :
+ отримує текст з параграфа з id "content"
+ отримує текст з блоку з id "rules"
+замініть текст параграфа з id 'content' на будь-який інший
+замініть текст параграфа з id 'rules' на будь-який інший
+
+ змініть кожному елементу колір фону на червоний
+змініть кожному елементу колір тексту на синій
+
+ отримати весь список класів елемента з id=rules і вивести їх в console.log
+
+ отримати всі елементи з класом fc_rules. визначити їм 2 події "клік", одна вивдоить текст елементу, інша довільний ьексь
+&поміняти колір тексту у всіх елементів fc_rules на червоний-->
+<script>
+    let content = document.getElementById('content');
+    let rules = document.getElementById('rules');
+
+    content.innerText = 'lesson five';
+    rules.innerText = 'something';
+    console.log(rules.innerHTML);
+
+    let li_collection = document.getElementsByTagName('li');
+
+    content.style.background = 'pink';
+    content.style.color = 'blue';
+    rules.style.background = 'pink';
+    rules.style.color = 'blue';
+    /* Почему обьектам с айди можно изменить вне цикла фон,а елементам списка нет?*/
+    for (const li of li_collection) {
+        li.style.background = 'pink';
+        li.style.color = 'blue';
+    }
+    console.log(rules);
+    /* Работает только на обьекте который я указал масивом обьекте*/
+    let fc_ro = document.getElementsByClassName('fc_rules');
+
+
+    /*
+        let fc_click = fc_ro[2];*/
+    for (const fc_click of fc_ro) {
+        fc_click.onclick = function () {
+            console.log('dsadladk lasdk alksdl aksd kalskd ');
+            console.log(fc_click.innerHTML);
+            fc_click.style.color = 'red';
+        }
+    }
+</script>
+
+</body>
+</html>
