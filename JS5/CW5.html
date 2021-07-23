@@ -81,10 +81,10 @@ let atag = document.getElementsByTagName('a');
 for (const at of atag) {
     at.classList.add('anchor');
     at.classList.add('element');
-    at.innerText = 'XXX';
     if (at.innerText === 'link3'){
-        at.style.background = 'black';
+        at.style.fontSize = '40px';
     }
+    at.innerText = 'XXX';
 }
 
 
@@ -92,7 +92,9 @@ let color_p = prompt('Введите цвет');
 let sub_class= document.getElementsByClassName('sub-header');
 
 for (const sub of sub_class){
-    sub.style.background = color_p;
+    if(sub.innerText === 'content 2 segment'){
+        sub.style.background = color_p;
+    }
 }
 
 let text_cont = prompt('Put your text there');
