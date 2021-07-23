@@ -49,50 +49,50 @@
     -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
     -- changeYear (newValue) - змінює рік випуску на значення newValue
     -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і доавляет його в поточний об'єкт car*/
-
-    function Car(model, madder, year, speed, volume) {
-        this.model = model;
-        this.madder = madder;
-        this.year = year;
-        this.max_speed = speed;
-        this.capacity = volume;
-        this.driver = {};
-
-        this.drive = function() {
-            console.log("їдемо зі швидкістю " + this.max_speed + " на годину")
-        }
-        this.info = function() {
-            console.log("_____________info_____________")
-            console.log("Модель " + this.model);
-            console.log("Максимальная скорость " + this.max_speed);
-            console.log("Изготовитель " + this.madder);
-            console.log("Гот выпуска " + this.year);
-            console.log("Обьем двигателя " + this.capacity);
-            console.log(`Водій ${this.driver.name || "відсутній"}`);
-            console.log("_____________info_____________")
-        }
-
-        this.increaseMaxSpeed = function(newSpeed) {
-            this.max_speed = this.max_speed + newSpeed;
-        }
-
-        this.changeYear = function(year) {
+    /*
+        function Car(model, madder, year, speed, volume) {
+            this.model = model;
+            this.madder = madder;
             this.year = year;
+            this.max_speed = speed;
+            this.capacity = volume;
+            this.driver = {};
+
+            this.drive = function() {
+                console.log("їдемо зі швидкістю " + this.max_speed + " на годину")
+            }
+            this.info = function() {
+                console.log("_____________info_____________")
+                console.log("Модель " + this.model);
+                console.log("Максимальная скорость " + this.max_speed);
+                console.log("Изготовитель " + this.madder);
+                console.log("Гот выпуска " + this.year);
+                console.log("Обьем двигателя " + this.capacity);
+                console.log(`Водій ${this.driver.name || "відсутній"}`);
+                console.log("_____________info_____________")
+            }
+
+            this.increaseMaxSpeed = function(newSpeed) {
+                this.max_speed = this.max_speed + newSpeed;
+            }
+
+            this.changeYear = function(year) {
+                this.year = year;
+            }
+
+            this.addDriver = function(driver) {
+                this.driver = driver;
+            }
         }
 
-        this.addDriver = function(driver) {
-            this.driver = driver;
-        }
-    }
+        let skora = new Car('Skoda', 'Russia', 2000, 200, 5);
 
-    let skora = new Car('Skoda', 'Russia', 2000, 200, 5);
-
-    skora.drive();
-    skora.info();
-    skora.increaseMaxSpeed(25);
-    skora.changeYear(2021);
-    skora.addDriver({name: 'Max', age: 25, status: true});
-    skora.info();
+        skora.drive();
+        skora.info();
+        skora.increaseMaxSpeed(25);
+        skora.changeYear(2021);
+        skora.addDriver({name: 'Max', age: 25, status: true});
+        skora.info();*/
 
 
     /*- (Те саме, тільки через клас)
@@ -103,77 +103,94 @@
     -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
     -- changeYear (newValue) - змінює рік випуску на значення newValue
     -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і доавляет його в поточний об'єкт car*/
-  /*  class Cars {
-        constructor(model, mad, year, speed, volume) {
-            this.model = model;
-            this.mad = mad;
-            this.year = year;
-            this.speed = speed;
-            this.volume = volume;
-        }
-        drive (speed) {console.log("Максимальная скорость"+speed)}
-       info (model,mad,year,speed,volume) {
-           console.log("Максимальная скорость " + speed);
-           console.log("Изготовитель " + mad);
-           console.log("Гот выпуска " + year);
-           console.log("Обьем двигателя " + volume);
-       }
-        increaseMaxSpeed(speed) {
-            let new_speed;
-            new_speed = speed + 30;
-            return new_speed;
-        }
+   /*class Cars {
+         constructor(model, mad, year, speed, volume) {
+             this.model = model;
+             this.mad = mad;
+             this.year = year;
+             this.speed = speed;
+             this.volume = volume;
+             this.driver = {};
+         }
 
-        changeYear(year) {
-            let newValue;
-            newValue = year - 20;
-            return newValue;
-        }
+         drive () {
+             console.log("Максимальная скорость " + this.speed)
+         }
 
-        addDriver(driver) {
-            return driver;
-        }
+         info(model, mad, year, speed, volume) {
+             console.log("Максимальная скорость " + this.speed);
+             console.log("Изготовитель " + this.mad);
+             console.log("Гот выпуска " + this.year);
+             console.log("Обьем двигателя " + this.volume);
+         }
 
+         increaseMaxSpeed = (speed) => {
+             this.speed += speed;
+         }
+
+         changeYear = (year)=> {
+             this.year += year;
+
+         }
+
+         addDriver = (driver) => {
+            this.driver = driver;
+         }
+
+     }
+
+     const gas = new Cars('Soda', 'Russia', 2000, 200, 5);
+
+     console.log(gas);
+     gas.drive();
+     gas.increaseMaxSpeed(25);
+     gas.changeYear(20);
+    gas.info();
+    gas.addDriver({name:'Grisha',age:40,status:'drink'})
+    console.log(gas.driver);
+
+*/
+    /*  -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити 10 попелюшок ,
+     покласти їх в масив.
+      Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
+          За допомоги циклу знайти яка попелюшка повинна бути з принцом.
+          Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку*/
+
+   /* class Girls {
+        constructor(name, age, feet) {
+            this.name = name;
+            this.age = age;
+            this.feet = feet;
+        }
     }
 
-    const gas = new Cars('Soda', 'Russia', 2000, 200, 5);
+    class Prince {
+        constructor(name, age, boot) {
+            this.name = name;
+            this.age = age;
+            this.boot = boot;
+        }
 
-console.log(gas);*/
+        findPrincess = (arrGirl) => {return arrGirl.find(girl => girl.feet === this.boot)}
+    }
 
-  /*  -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити 10 попелюшок ,
-   покласти їх в масив.
-    Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
-        За допомоги циклу знайти яка попелюшка повинна бути з принцом.
-        Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку*/
+    const olya = new Girls('Olya', 18, 34);
+    const nastya = new Girls('Nastya', 19, 35);
+    const maria = new Girls('Maria', 18, 36);
+    const jenya = new Girls('Jenya', 20, 34);
+    const monica = new Girls('Monica', 17, 33);
+    const luisa = new Girls('Luisa', 19, 35);
+    const sara = new Girls('Sara', 21, 36);
+    const kris = new Girls('Kris', 19, 35);
+    const nadia = new Girls('Nadia', 18, 35);
+    const moja = new Girls('Moja', 22, 34);
 
-    // class Girls {
-    //     constructor(name, age, feet) {
-    //         this.name = name;
-    //         this.age = age;
-    //         this.feet = feet;
-    //     }
-    // }
-    //
-    // const olya = new Girls('Olya',18,34);
-    // const nastya = new Girls('Nastya',19,35);
-    // const maria = new Girls('Maria',18,36);
-    // const jenya = new Girls('Jenya',20,34);
-    // const monica = new Girls('Monica',17,33);
-    // const luisa = new Girls('Luisa',19,35);
-    // const sara = new Girls('Sara',21,36);
-    // const kris = new Girls('Kris',19,35);
-    // const nadia = new Girls('Nadia',18,35);
-    // const moja = new Girls('Moja',22,34);
-    //
-    //
-    // let princess= [olya,nastya,maria,jenya,monica,luisa,sara,kris,nadia,moja];
-    //
-    // let prince= {
-    //     name:John,
-    //     age:23,
-    //     feet:34
-    // }
+    let princess = [olya, nastya, maria, jenya, monica, luisa, sara, kris, nadia, moja];
 
+    let prince = new Prince('John', 24, 34);
+
+    let girl = prince.findPrincess(princess);
+    console.log(`Принц знайшов собі самку ${girl.name}`)*/
 
 </script>
 </body>
