@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+    function wake_up() {
+        setTimeout(() => {
+            console.log('Проснуться');
+        }, 300);
+    }
+
+
+    function brash() {
+
+        setTimeout(() => {
+            console.log('Почистить зубы');
+        }, 1000);
+
+    }
+
+    function eat() {
+        setTimeout(() => {
+            console.log('Пойти покушать');
+        }, 2100);
+    }
+
+
+    function close_on() {
+        setTimeout(() => {
+            console.log('Одеться');
+        }, 500);
+    }
+
+
+    function restaurant() {
+        setTimeout(() => {
+            console.log('Сходить покушать в кафе');
+        }, 2000);
+    }
+
+    function go_back() {
+        setTimeout(() => {
+            console.log('Вернуться с роботы');
+        }, 4000);
+    }
+
+    function go_out() {
+        setTimeout(() => {
+           console.log('Пойти на работу');
+        }, 3000);
+    }
+
+    function go_slip() {
+        setTimeout(() => {
+            console.log('Пойти спать');
+        }, 10);
+    }
+
+    async function actions(){
+        await wake_up();
+        await eat();
+        await brash();
+        await close_on();
+        await go_out();
+        await restaurant();
+        await go_back();
+        await go_slip();
+    }
+
+    actions();
+
+</script>
+</body>
+</html>

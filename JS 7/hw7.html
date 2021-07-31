@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+    function wake_up(){
+        return new Promise((resolve,reject )=>{
+        setTimeout(()=>{
+            resolve('Проснуться');
+    },300);
+        });
+}
+
+
+    function brash(){
+        return new Promise((resolve,reject )=>{
+        setTimeout(()=>{
+        resolve('Почистить зубы');
+    },1000);
+        });
+}
+    function eat(){
+        return new Promise((resolve,reject )=>{
+            setTimeout(()=>{
+                resolve('Пойти покушать');
+            },2100);
+        });
+    }
+
+
+    function close_on(){
+        return new Promise((resolve,reject )=>{
+        setTimeout(()=>{
+            resolve('Одеться');
+    },500);
+        });
+}
+
+
+    function restaurant(){
+        return new Promise((resolve,reject )=>{
+        setTimeout(()=>{
+            resolve('Сходить покушать в кафе');
+    },2000);
+        });
+}
+
+    function go_back(){
+        return new Promise((resolve,reject )=>{
+            setTimeout(()=>{
+        resolve('Вернуться с роботы');
+    },4000);
+    });
+}
+
+    function go_out(){
+        return new Promise((resolve,reject )=>{
+            setTimeout(()=>{
+                resolve('Пойти на работу');
+            },3000);
+        });
+    }
+
+    function go_slip(){
+return new Promise((resolve,reject )=>{
+        setTimeout(()=>{
+            resolve('Пойти спать');
+    },10);
+});
+    }
+
+    wake_up()
+    .then((value) => {
+        console.log(value);
+
+        return eat();
+    })
+    .then((value) => {
+        console.log(value);
+
+            return brash();
+    })
+        .then((value) => {
+            console.log(value);
+
+            return close_on();
+        })
+        .then((value) => {
+            console.log(value);
+
+            return go_out();
+        })
+        .then((value) => {
+            console.log(value);
+
+            return restaurant();
+        })
+        .then((value) => {
+            console.log(value);
+
+            return go_back();
+        })
+        .then((value) => {
+            console.log(value);
+
+            return go_slip();
+        })
+</script>
+</body>
+</html>
