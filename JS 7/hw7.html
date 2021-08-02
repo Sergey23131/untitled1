@@ -14,6 +14,7 @@
         return new Promise((resolve,reject )=>{
         setTimeout(()=>{
             resolve('Проснуться');
+            reject('Error');
     },300);
         });
 }
@@ -23,6 +24,7 @@
         return new Promise((resolve,reject )=>{
         setTimeout(()=>{
         resolve('Почистить зубы');
+        reject('Error');
     },1000);
         });
 }
@@ -30,6 +32,7 @@
         return new Promise((resolve,reject )=>{
             setTimeout(()=>{
                 resolve('Пойти покушать');
+                reject('Error');
             },2100);
         });
     }
@@ -39,6 +42,7 @@
         return new Promise((resolve,reject )=>{
         setTimeout(()=>{
             resolve('Одеться');
+            reject('Error');
     },500);
         });
 }
@@ -48,6 +52,7 @@
         return new Promise((resolve,reject )=>{
         setTimeout(()=>{
             resolve('Сходить покушать в кафе');
+            reject('Error');
     },2000);
         });
 }
@@ -56,6 +61,7 @@
         return new Promise((resolve,reject )=>{
             setTimeout(()=>{
         resolve('Вернуться с роботы');
+                reject('Error');
     },4000);
     });
 }
@@ -64,6 +70,7 @@
         return new Promise((resolve,reject )=>{
             setTimeout(()=>{
                 resolve('Пойти на работу');
+                reject('Error');
             },3000);
         });
     }
@@ -72,6 +79,7 @@
 return new Promise((resolve,reject )=>{
         setTimeout(()=>{
             resolve('Пойти спать');
+            reject('Error');
     },10);
 });
     }
@@ -112,6 +120,9 @@ return new Promise((resolve,reject )=>{
 
             return go_slip();
         })
+    .catch(reason => {
+        console.log(reason);
+    })
 </script>
 </body>
 </html>
