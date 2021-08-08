@@ -1,0 +1,43 @@
+*{
+    background-color:#C5E9EA;
+    box-sizing: border-box;
+    font-family:'sans-serif';
+    font-size: 19px;
+    margin: 20px;
+
+}
+
+#info_box{
+    display: grid;
+    grid-template-columns: 50% auto  ;
+    border: 4px double black;
+}
+
+#address{
+    display: grid;
+    grid-template-columns: 35% 35%  ;
+}
+
+#get-posts{
+    height:50px;
+    width:95%;
+    background-color: black;
+    color: white;
+}
+
+#user-posts{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20% ;
+    border: 4px double black;
+}
+.postDiv{
+    border: 4px double black;
+}
+a{
+    width: 190px;
+    padding: 10px;
+    margin-left: 30px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+}
